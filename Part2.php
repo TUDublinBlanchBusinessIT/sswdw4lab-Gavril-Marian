@@ -27,7 +27,7 @@ if (isset($_POST['firstname']) && isset($_POST['surname'])) {
     // Insert the data into the database
     $sql = "INSERT INTO member (firstname, surname) VALUES ('$fn', '$sn')";
 
-    // Execute the query
+    
     if (mysqli_query($conn, $sql)) {
         echo "New member added successfully!";
     } else {
